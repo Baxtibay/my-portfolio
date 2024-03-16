@@ -1,0 +1,15 @@
+@import './base.css';
+:root {
+  --primary-color: #FF7315;
+  --black-100: #222;
+  --black-80: rgba(34, 34, 34, 0.8);
+  --black-50: rgba(34, 34, 34, 0.5);
+  --white-color: #F9F9F9;
+  --grey-blue: #33323d;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
