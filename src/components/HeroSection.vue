@@ -50,7 +50,7 @@
       </div>
     </div>
     <picture class="hero__img">
-      <img class="img-inner" src="../assets/my-picture-img.png" alt="img" width="406" height="406">
+      <img class="img-inner" src="../assets/my-picture-img.png" alt="Baxtibay's picture" width="406" height="406">
     </picture>
   </div>
 </template>
