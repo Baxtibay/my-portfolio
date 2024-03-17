@@ -49,7 +49,7 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
-  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 0.1px var(--black-100);
 }
 
 .site-header__container {
