@@ -50,6 +50,10 @@ img {
 }
 
 /* BUTTONS */
+button,
+a {
+  cursor: pointer;
+}
 .site-header__sitenav-toggler {
   display: none;
   padding: 0;
