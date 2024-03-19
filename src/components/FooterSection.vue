@@ -82,8 +82,8 @@ footer {
 
 @media only screen and (max-width: 768px) {
   footer {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .footer__list {
@@ -95,9 +95,15 @@ footer {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 435px) {
   .footer__text {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .footer__text {
+    font-size: 10px;
   }
 }
 </style>

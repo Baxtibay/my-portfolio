@@ -155,6 +155,10 @@ export default {
 
 
 /* CONTACT-FORM */
+.contact__form-wrapper {
+  margin-bottom: 30px;
+}
+
 .button-block {
   display: block;
 }
