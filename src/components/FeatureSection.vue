@@ -23,6 +23,7 @@ export default {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  margin-bottom: 100px;
   padding-left: 14px;
   padding-top: 48px;
   padding-right: 40px;

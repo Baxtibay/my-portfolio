@@ -1,7 +1,7 @@
 <script setup>
 import HeroSection from '../components/HeroSection.vue'
 import FeatureSection from '../components/FeatureSection.vue'
-import MiniPortfolio from '../components/MiniPortfolio.vue'
+import Portfolio from '../components/Portfolio.vue'
 </script>
 
 <template>
@@ -10,6 +10,7 @@ import MiniPortfolio from '../components/MiniPortfolio.vue'
 
     <FeatureSection />
 
-    <MiniPortfolio />
+    <Portfolio />
   </main>
 </template>
+../components/Portfolio.vue
