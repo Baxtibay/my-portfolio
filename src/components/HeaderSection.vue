@@ -2,6 +2,7 @@
   <header class="site-header">
     <div class="site-header__container container">
       <routerLink class="site-header__logo logo" to="/">
+        <!-- Logo svg -->
         <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="61" height="32" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M31.347 26.122 15.673 0 0 26.122h31.347ZM60.082 5.878 44.408 32 28.735 5.878h31.347Z" clip-rule="evenodd"/></svg>
       </routerLink>
       <div class="site-header__sitenav">
@@ -20,15 +21,11 @@
           </ul>
         </nav>
         <button class="close-sitenav-button" type="button">
-          <span class="close-sitenav-button-inner">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="currentColor"/></svg>
-          </span>
+          <i class="fa-solid fa-xmark fa-2xl"></i>
         </button>
       </div>
       <button class="site-header__sitenav-toggler" type="button">
-        <span class="site-header__sitenav-toggler-inner">
-          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="28px" height="28px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" fill="currentColor"/></svg>
-        </span>
+        <i class="fa-solid fa-bars fa-2xl"></i>
       </button>
     </div>
   </header>
@@ -119,10 +116,6 @@ header {
   transform: scale(0.8);
 }
 
-.close-sitenav-button-inner {
-  display: flex;
-}
-
 
 @media only screen and (max-width: 768px) {
   .site-header {
@@ -140,8 +133,8 @@ header {
   .close-sitenav-button {
     display: block;
     position: absolute;
-    top: 5px;
-    right: 15px;
+    top: 10px;
+    right: 20px;
   }
 
   .site-header__sitenav-toggler {
