@@ -72,6 +72,20 @@ a {
   transform: scale(0.9);
 }
 
+/* SOCIALS-BG-COLOR */
+.tg-bg {
+  background-color: var(--orange-color);
+}
+.ins-bg {
+  background-color: var(--light-blue);
+}
+.in-bg {
+  background-color: var(--dark-blue);
+}
+.git-bg {
+  background-color: var(--danger-color);
+}
+
 
 /* CONTAINER  */
 .container {
