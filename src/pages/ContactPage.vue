@@ -9,7 +9,7 @@
         <ul class="info__list">
           <li class="info__item">
             <span class="icon icon-location">
-              <i class="fa-solid fa-location-dot fa-xl location-color"></i>
+              <i class="fa-solid fa-location-dot fa-lg location-color"></i>
             </span>
             <div class="info__item-inner">
               <h3 class="info__heading">Adress</h3>
@@ -31,7 +31,7 @@
           </li>
           <li class="info__item">
             <span class="icon icon-phone">
-              <i class="fa-solid fa-phone fa-lg telefon-color"></i>
+              <i class="fa-solid fa-phone fa-ss telefon-color"></i>
             </span>
             <div class="info__item-inner">
               <h3 class="info__heading">Phone</h3>
@@ -40,7 +40,7 @@
           </li>
           <li class="info__item">
             <span class="icon icon-email">
-              <i class="fa-solid fa-at fa-xl email-color"></i>
+              <i class="fa-solid fa-at fa-ss email-color"></i>
             </span>
             <div class="info__item-inner">
               <h3 class="info__heading">Email</h3>
