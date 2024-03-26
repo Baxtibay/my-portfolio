@@ -1,5 +1,5 @@
 <script setup>
-import HeroSection from '../components/HeroSection.vue'
+import HeroSection from '../components/Hero.vue'
 import FeatureSection from '../components/FeatureSection.vue'
 import Portfolio from '../components/Portfolio.vue'
 </script>
