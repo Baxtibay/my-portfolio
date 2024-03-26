@@ -2,36 +2,39 @@
   <div class="hero">
     <div class="hero__content">
       <p class="hero__greeting">Hello</p>
-      <h1 class="hero__heading">I'm Begniyazov Baxtibay a Frontend developer</h1>
-      <p class="hero__text">I enjoy developing comfortable and beautiful web applications for users.</p>
+      <h1 class="hero__heading">I'm Baxtibay Begniyazov a Frontend developer</h1>
+      <p class="hero__text">I'm a front-end developer trying for a junior position. I enjoy developing comfortable and beautiful web applications for users. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. I'd love you to check my work.</p>
       <div class="socials">
         <p class="socials__text">Follow me</p>
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link tg-bg" href="#">
+            <a class="socials__link tg-bg" href="https://t.me/frontend_web_devel0per" target="_blank">
               <i class="fa-brands fa-telegram fa-xl"></i>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link in-bg" href="#">
+            <routerLink class="socials__link in-bg" to="/not-found">
               <i class="fa-brands fa-linkedin fa-xl"></i>
-            </a>
+            </routerLink>
           </li>
           <li class="socials__item">
-            <a class="socials__link ins-bg" href="#">
+            <a class="socials__link ins-bg" href="https://www.instagram.com/baxti_programmer_?igsh=bWt0OXRhaThycGc3" target="_blank">
               <i class="fa-brands fa-instagram fa-xl"></i>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link git-bg" href="#">
+            <a class="socials__link git-bg" href="https://github.com/Baxtibay" target="_blank">
               <i class="fa-brands fa-github fa-xl"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class="buttons-wrapper">
-        <button class="button-default button-danger button-right" type="button">Send Request</button>
-        <button class="button-default button-outline" type="button">Download CV</button>
+        <routerLink class="button-default button-danger button-right" to="/contact">Send Request</routerLink>
+        <routerLink class="button-default button-outline" to="/not-found">
+          <span style="margin-right: 8px;">Resume</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 15 .621 2.485A2 2 0 0 0 3.561 19h14.878a2 2 0 0 0 1.94-1.515L21 15m-10-2V1v12Zm0 0L7 9l4 4Zm0 0 4-4-4 4Z"/></svg>
+        </routerLink>
       </div>
     </div>
     <picture class="hero__img">
@@ -51,6 +54,7 @@ export default {
   padding: 14px 13px;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
   transition: all .3s ease;
   border-radius: 10px;
 }
@@ -87,6 +91,7 @@ export default {
 .button-outline:active {
   opacity: 0.6;
 }
+
 /* button end */
 
 
