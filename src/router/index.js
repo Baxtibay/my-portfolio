@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../pages/ContactPage.vue')
     },
     {
+      path: '/not-found',
+      name: 'not-found',
+      component: () => import('../pages/NotFoundPage.vue')
+    },
+    {
       path: '/project-info',
       name: 'project-info',
       component: () => import('../pages/ProjectInfoPage.vue')

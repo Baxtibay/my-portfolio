@@ -2,13 +2,15 @@
   <section class="contact">
     <div class="contact__content">
       <h2 class="contact__heading">Get in Touch</h2>
-      <p class="contact__text">Please contact me if you have any questions or projects.  I will be happy to work with you.</p>
+      <p class="contact__text">I'd love to hear about and how I could help. I'm currently looking for a job and I am open to a wide range of opportunities. I'm a hard-working and positive person who will always approach each task with a sense of purpose and atention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
     </div>
     <div class="contact-about-contact-form-wrapper">
       <div class="contact__info">
         <ul class="info__list">
           <li class="info__item">
-            <span class="icon icon-location"></span>
+            <span class="icon icon-location">
+              <i class="fa-solid fa-location-dot fa-lg location-color"></i>
+            </span>
             <div class="info__item-inner">
               <h3 class="info__heading">Adress</h3>
               <div class="info__item-about">
@@ -28,14 +30,18 @@
             </div>
           </li>
           <li class="info__item">
-            <span class="icon icon-phone"></span>
+            <span class="icon icon-phone">
+              <i class="fa-solid fa-phone fa-ss telefon-color"></i>
+            </span>
             <div class="info__item-inner">
               <h3 class="info__heading">Phone</h3>
               <p class="info__text">+998(90) 574 76 16</p>
             </div>
           </li>
           <li class="info__item">
-            <span class="icon icon-email"></span>
+            <span class="icon icon-email">
+              <i class="fa-solid fa-at fa-ss email-color"></i>
+            </span>
             <div class="info__item-inner">
               <h3 class="info__heading">Email</h3>
               <p class="info__text">baxtibaybekniyazov@gmail.com</p>
@@ -44,40 +50,28 @@
         </ul>
       </div>
       <div class="contact__form-wrapper">
-        <form class="contact__form">
-          <h4 class="contact__heading">Send message</h4>
-          <input class="contact__input" type="text" name="name" placeholder="Name">
-          <input class="contact__input" type="text" name="name" placeholder="Email">
-          <textarea class="contact__input contact__textarea" name="textarea" placeholder="Message"></textarea>
-          <button class="button-default button-outline contact-button button-block" type="button">Send</button>
-        </form>
+        <ContactMeForm />
       </div>
     </div>
   </section>
 </template>
 <script>
+import ContactMeForm from '../components/ContactMeForm.vue'
 export default {
+  components: {
+    ContactMeForm,
+  },
 
 }
 </script>
-<style>
+<style scoped>
 .contact__content {
   margin-bottom: 100px;
   padding-top: 40px;
   text-align: center;
 }
 
-.contact__heading {
-  color: var(--primary-color);
-  margin-top: 0;
-  margin-bottom: 24px;
-  padding: 0;
-}
-.contact__text {
-  color: var(--black-50);
-  font-weight: 500;
-  margin-top: 0;
-}
+
 .contact-about-contact-form-wrapper {
   display: flex;
   justify-content: space-between;
@@ -86,6 +80,7 @@ export default {
 .info__list {
   margin: 0;
   margin-right: 15px;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
 }
@@ -103,7 +98,9 @@ export default {
 }
 
 .icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   padding: 20px;
@@ -114,39 +111,42 @@ export default {
   background-position: center center;
 }
 
-.icon-location {
-  background-image: url("../assets/location.png");
+.location-color {
+  color: red;
 }
 
-.icon-phone {
-  background-image: url("../assets/telephone.png");
+.telefon-color {
+  color: var(--white-color);
 }
 
-.icon-email {
-  background-image: url("../assets/gmail.png");
+.email-color {
+  color: var(--white-color);
 }
-
 
 .info__heading {
   color: var(--primary-color);
   margin: 0;
 }
+
 .info__definition-list {
   display: flex;
   margin: 0;
 }
+
 .info__definition-title {
   color: var(--black-80);
   font-weight: 600;
   margin-right: 10px;
   font-size: 14px;
 }
+
 .info__definition-description {
   color: var(--black-50);
   font-weight: 500;
   margin: 0;
   letter-spacing: 0.4px;
 }
+
 .info__text {
   margin: 0;
   color: var(--black-80);
@@ -157,42 +157,6 @@ export default {
 /* CONTACT-FORM */
 .contact__form-wrapper {
   margin-bottom: 30px;
-}
-
-.button-block {
-  display: block;
-}
-
-.contact__heading {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.contact__input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  color: var(--black-80);
-  font-weight: 500;
-  border: none;
-  outline: none;
-  font-family: "Poppins", "Arial", sans-serif;
-}
-
-::placeholder {
-  color: var(--black-50);
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.contact__textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.contact-button {
-  padding: 8px 40px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -211,41 +175,28 @@ export default {
     width: 30px;
     height: 30px;
   }
-
-  .contact__heading {
-    font-size: 18px;
-  }
-
-  .info__heading {
-    font-size: 15px;
-  }
-
-  .info__text,
-  .info__definition-description {
-    font-size: 14px;
-  }
-
-  .contact__input {
-    /* width: 90%; */
-    padding: 7px 10px;
-  }
-
-  ::placeholder {
-    font-size: 13px;
-  }
-
 }
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 768px) {
   .contact-about-contact-form-wrapper {
     flex-direction: column;
   }
+}
 
+@media only screen and (max-width: 650px) {
   .contact__info {
     margin-bottom: 40px;
   }
 
   .contact__text {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__form {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -261,10 +212,6 @@ export default {
   .info__definition-title,
   .info__definition-description {
     font-size: 13px;
-  }
-  .contact__form {
-    display: flex;
-    flex-direction: column;
   }
 
   .contact__heading {
