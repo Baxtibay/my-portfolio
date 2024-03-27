@@ -24,6 +24,11 @@ const router = createRouter({
       name: 'not-found',
       component: () => import('../pages/NotFoundPage.vue')
     },
+    {
+      path: '/project-info',
+      name: 'project-info',
+      component: () => import('../pages/ProjectInfoPage.vue')
+    },
   ]
 })
 
