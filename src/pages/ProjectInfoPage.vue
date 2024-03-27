@@ -34,11 +34,15 @@
         <img class="project__background-img" src="https://placehold.co/600x400" alt="">
       </div>
     </div>
+    <EmailMe />
   </div>
 </template>
 <script>
+import EmailMe from '@/components/EmailMe.vue'
 export default {
-
+  components: {
+    EmailMe
+  }
 }
 </script>
 <style>
