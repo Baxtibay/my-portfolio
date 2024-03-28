@@ -148,6 +148,7 @@ export default {
 .project-card__heading {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 30px;
   color: var(--primary-color);
 }
 .project-card__img-wrapper {
@@ -244,6 +245,9 @@ export default {
   .project-card {
     width: 90%;
   }
+  .project-card__heading {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 950px) {
   .project-card:not(:last-child) {
@@ -264,6 +268,10 @@ export default {
   .project-card {
     width: 100%;
   }
+
+  .project-card__heading {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -280,6 +288,9 @@ export default {
 
   .project-card {
     width: 100%;
+  }
+  .project-card__heading {
+    font-size: 20px;
   }
   .project__links {
     margin-bottom: 15px;
@@ -304,9 +315,7 @@ export default {
   .projects__heading-wrapper {
     padding: 0;
   }
-  .project-card__heading {
-    font-size: 15px;
-  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -315,6 +324,9 @@ export default {
   }
   .projects__link {
     font-size: 14px;
+  }
+  .project-card__heading {
+    font-size: 18px;
   }
   .project__texnalogy-name {
     font-size: 12px;
