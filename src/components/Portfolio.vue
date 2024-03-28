@@ -104,6 +104,7 @@ export default {
   margin: 0;
   font-size: 48px;
   font-weight: 600;
+  color: var(--black-100);
 }
 .projects__link {
   text-transform: capitalize;
