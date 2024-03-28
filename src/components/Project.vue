@@ -1,36 +1,35 @@
 <template>
   <div class="project-card">
-        <h3 class="project-card__heading">{{ project.name }}</h3>
-        <div class="project-card__img-wrapper">
-          <img class="project-card__img" src="../assets/projects-img/portfolio-Image.png" alt="project's picture" width="300" height="300">
-        </div>
-        <div class="project__links">
-          <a class="project__link" href ="#" target="_blank">
-            <span class="project__link-text">Github</span>
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a class="project__link" href="#" target="_blank">
-            <span class="project__link-text">Deploy</span>
-            <i class="fa-solid fa-globe"></i>
-          </a>
-          <a class="project__link" href="#" target="_blank">
-            <span class="project__link-text">More info</span>
-            <i class="fa-solid fa-circle-info"></i>
-          </a>
-        </div>
-        <ul class="project__texnalogy-list">
-          <li class="project__texnalogy-item">
-            <span class="project__texnalogy-name">JavaScript</span>
-          </li>
-          <li class="project__texnalogy-item">
-            <span class="project__texnalogy-name">Html</span>
-          </li>
-          <li class="project__texnalogy-item">
-            <span class="project__texnalogy-name">Css</span>
-          </li>
-        </ul>
-
-      </div>
+    <h3 class="project-card__heading">{{ project.name }}</h3>
+    <div class="project-card__img-wrapper">
+      <img class="project-card__img" src="../assets/projects-img/portfolio-Image.png" alt="project's picture" width="300" height="300">
+    </div>
+    <div class="project__links">
+      <a class="project__link" href ="#" target="_blank">
+        <span class="project__link-text">Github</span>
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a class="project__link" href="#" target="_blank">
+        <span class="project__link-text">Deploy</span>
+        <i class="fa-solid fa-globe"></i>
+      </a>
+      <a class="project__link" href="#" target="_blank">
+        <span class="project__link-text">More info</span>
+        <i class="fa-solid fa-circle-info"></i>
+      </a>
+    </div>
+    <ul class="project__texnalogy-list">
+      <li class="project__texnalogy-item">
+        <span class="project__texnalogy-name">JavaScript</span>
+      </li>
+      <li class="project__texnalogy-item">
+        <span class="project__texnalogy-name">Html</span>
+      </li>
+      <li class="project__texnalogy-item">
+        <span class="project__texnalogy-name">Css</span>
+      </li>
+    </ul>
+  </div>
 </template>
 <script>
 export default {

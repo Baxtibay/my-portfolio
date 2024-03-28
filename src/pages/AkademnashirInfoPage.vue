@@ -1,9 +1,9 @@
 <template>
   <div class="project">
-    <img class="project__img" src="https://placehold.co/1100x500" alt="">
+    <img class="project__img" src="../assets/projects-img/Akademnashr-preview-img.png" alt="">
     <div class="project__detail-wrapper">
       <div class="project__info">
-        <h1 class="project__heading">Project name</h1>
+        <h1 class="project__heading">Akademnashir</h1>
         <div class="project__info-inner">
           <div class="project__item-link-wrapper">
             <ul class="project__texnology-list">
@@ -17,21 +17,21 @@
                 <span class="project__texnology-text">JS</span>
               </li>
             </ul>
-            <a class="project__link button-default button-outline" href="#">Visit Website</a>
+            <a class="project__link button-default button-outline" href="https://akademnashr-project-site.netlify.app/" target="_blank">Visit Website</a>
           </div>
           <div class="project__about-text-wrapper">
             <p class="project__about-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe at nesciunt vero mollitia! Eum eos saepe magni ratione dolore pariatur, quis omnis deserunt vitae, nam debitis nihil rem.
+              This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page.
             </p>
           </div>
         </div>
       </div>
       <div class="project__background">
         <h2 class="project__background-heading">Project Background</h2>
-        <p class="project__background-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quisquam quo perspiciatis illo beatae nulla unde, eum omnis. Possimus nostrum blanditiis nulla aspernatur voluptates sunt delectus sequi, perspiciatis, repellat dicta officia ut cumque ipsum! Nisi dolorem, animi tempora suscipit laudantium dolorum eveniet illo quod, provident aliquid amet dignissimos enim vel. Obcaecati, quos id fugiat eaque neque alias magnam adipisci maiores!</p>
+        <p class="project__background-text">The only JavaScript this project required was to enable the toggling of the mobile navigation. It wasn't difficult because it was a small landing page project. I had not the responsive design because this time a litte caused difficulty.
+        </p>
         <h3 class="project__background-heading">Static Previews</h3>
-        <img class="project__background-img" src="https://placehold.co/600x400" alt="">
-        <img class="project__background-img" src="https://placehold.co/600x400" alt="">
+        <img class="project__background-img" src="../assets/projects-img/Akademnashr-site.png" width="690" height="1200" alt="">
       </div>
     </div>
     <EmailMe />
@@ -47,6 +47,7 @@ export default {
 </script>
 <style scoped>
 .project {
+  padding-top: 20px;
   text-align: center;
   margin-bottom: 80px;
 }
