@@ -286,6 +286,20 @@ export default {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .projects__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
+  }
+  .project-card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .projects__heading-wrapper {
     padding: 0;
