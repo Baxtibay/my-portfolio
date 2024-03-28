@@ -5,7 +5,7 @@
     </picture>
     <h4 class="not-found__heading">404!</h4>
     <p class="not-found__text">
-      <strong class="not-found__strong-text">Opps!... </strong>Looks like the page you’’re looking for is missing
+      <strong class="not-found__strong-text">Opps!... </strong>Looks like the page you’re looking for is missing
     </p>
     <routerLink  class="not-found__link button-default button-outline" to="/">Go Home</routerLink>
   </div>
