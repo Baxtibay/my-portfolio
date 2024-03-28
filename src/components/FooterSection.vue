@@ -7,14 +7,14 @@
           <p class="footer__text">baxtibaybekniyazov@gmail.com</p>
         </li>
         <li class="footer__item">
-          <p class="footer__text">© Copyright 2024 | Designed and coded by Begniyazov</p>
+          <p class="footer__text">© Copyright 2024 | Designed and coded by Baxtibay</p>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://github.com/Baxtibay" target="_blank">
-            <i class="fa-brands fa-github fa-lg"></i>
+            <i class="fa-brands fa-github fa-2xl"></i>
           </a>
           <a class="footer__link" href="https://t.me/frontend_web_devel0per" target="_blank">
-<i class="fa-brands fa-telegram fa-lg"></i>
+<i class="fa-brands fa-telegram fa-2xl"></i>
           </a>
         </li>
       </ul>
@@ -29,8 +29,8 @@ export default {
 
 <style>
 footer {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 46px;
+  padding-bottom: 46px;
   color: var(--white-color);
   background-color: var(--grey-blue);
 }
@@ -50,7 +50,7 @@ footer {
 
 .footer__text {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -77,34 +77,43 @@ footer {
   opacity: 0.6;
 }
 
+@media only screen and (max-width: 950px) {
+  .footer__text {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 768px) {
   footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .footer__list {
     flex-direction: column;
   }
 
-  .footer__item:not(:last-child) {
-    margin-bottom: 8px;
+  .footer__item:nth-child(2) {
+    order: 3;
+    margin-bottom: 0;
+  }
+  .footer__item:nth-child(3) {
+    order: 2;
+  }
+
+  .footer__item {
+    margin-bottom: 24px;
   }
 }
 
-@media only screen and (max-width: 435px) {
+@media only screen and (max-width: 430px) {
   .footer__text {
-    font-size: 12px;
-  }
-  .footer__link-icon {
-    width: 18px;
-    height: 18px;
+    font-size: 12.5px;
   }
 }
 
 @media only screen and (max-width: 380px) {
   .footer__text {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 </style>
