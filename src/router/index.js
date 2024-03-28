@@ -29,6 +29,16 @@ const router = createRouter({
       name: 'project-info',
       component: () => import('../pages/ProjectInfoPage.vue')
     },
+    {
+      path: '/ansormed-info-page',
+      name: 'ansormed-info-page',
+      component: () => import('../pages/AnsormedInfoPage.vue')
+    },
+    {
+      path: '/akademnashir-info-page',
+      name: 'akademnashir-info-page',
+      component: () => import('../pages/AkademnashirInfoPage.vue')
+    },
   ]
 })
 
