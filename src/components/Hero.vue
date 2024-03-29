@@ -316,18 +316,22 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 600px) {
     .hero {
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
     }
-
     .hero__content {
       width: 100%;
       text-align: center;
     }
+    .hero__img {
+      margin-bottom: 10px;
+    }
+  }
 
+  @media only screen and (max-width: 550px) {
     .hero__heading {
       font-size: 16px;
       line-height: 24px;
@@ -344,19 +348,10 @@ export default {
       font-size: 16px;
     }
 
-    .buttons-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
     .button-default {
       font-size: 14px;
     }
 
-    .button-right {
-      margin-right: 0;
-    }
     .img-inner {
       width: 350px;
       height: 350px;
