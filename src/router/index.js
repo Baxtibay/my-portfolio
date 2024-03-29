@@ -39,6 +39,11 @@ const router = createRouter({
       name: 'akademnashir-info-page',
       component: () => import('../pages/AkademnashirInfoPage.vue')
     },
+    {
+      path: '/in-progress',
+      name: 'in-progress',
+      component: () => import('../components/InProgress.vue')
+    },
   ]
 })
 
