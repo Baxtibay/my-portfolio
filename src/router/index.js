@@ -42,7 +42,7 @@ const router = createRouter({
     {
       path: '/in-progress',
       name: 'in-progress',
-      component: () => import('../components/InProgress.vue')
+      component: () => import('../pages/InProgressPage.vue')
     },
   ]
 })

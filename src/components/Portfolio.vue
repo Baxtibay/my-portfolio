@@ -55,7 +55,7 @@
             <span class="project__link-text">Github</span>
             <i class="fa-brands fa-github"></i>
           </a>
-          <routerLink class="project__link" to="/not-found">
+          <routerLink class="project__link" to="/in-progress">
             <span class="project__link-text">Deploy</span>
             <i class="fa-solid fa-globe"></i>
           </routerLink>
