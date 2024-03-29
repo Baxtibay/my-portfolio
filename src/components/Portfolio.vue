@@ -279,6 +279,7 @@ export default {
     font-size: 30px;
   }
   .project__links {
+    display: inline-flex;
     flex-direction: column;
   }
 
