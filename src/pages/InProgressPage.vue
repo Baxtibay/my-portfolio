@@ -4,14 +4,19 @@
     <div class="loading-bar">
       <div class="percentage" :style="{'width': percentage + '%'}"></div>
     </div>
+    <HomeButton />
   </div>
 </template>
 <script>
+import HomeButton from '@/ui-components/HomeButton.vue'
 export default {
   data() {
     return {
       percentage: 95
     }
+  },
+  components: {
+    HomeButton,
   }
 }
 </script>
@@ -31,6 +36,7 @@ export default {
   position: relative;
   width: 400px;
   height: 30px;
+  margin-bottom: 20px;
   border-radius: 15px;
   overflow: hidden;
   border-bottom: 1px solid #ddd;

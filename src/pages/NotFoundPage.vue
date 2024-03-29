@@ -7,12 +7,15 @@
     <p class="not-found__text">
       <strong class="not-found__strong-text">Opps!... </strong>Looks like the page you’re looking for is missing
     </p>
-    <routerLink  class="not-found__link button-default button-outline" to="/">Go Home</routerLink>
+    <HomeButton />
   </div>
 </template>
 <script>
+import HomeButton from '@/ui-components/HomeButton.vue';
 export default {
-
+  components: {
+    HomeButton
+  }
 }
 </script>
 <style scoped>
@@ -50,10 +53,6 @@ export default {
 .not-found__strong-text {
   font-weight: 600;
   font-size: 48px;
-}
-
-.not-found__link {
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
