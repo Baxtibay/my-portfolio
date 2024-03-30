@@ -1,10 +1,12 @@
 <template>
   <div class="loading-bar_box">
-    <span class="loading-bar_text">Project in progress... {{percentage}}%</span>
-    <div class="loading-bar">
-      <div class="percentage" :style="{'width': percentage + '%'}"></div>
+    <div class="loading-bar__content">
+      <span class="loading-bar_text">Project in progress... {{percentage}}%</span>
+      <div class="loading-bar">
+        <div class="percentage" :style="{'width': percentage + '%'}"></div>
+      </div>
+      <HomeButton />
     </div>
-    <HomeButton />
   </div>
 </template>
 <script>
@@ -22,7 +24,11 @@ export default {
 </script>
 <style scoped>
 .loading-bar_box {
-  position: fixed;
+  height: 80vh;
+  position: relative;
+}
+.loading-bar__content {
+  position: absolute;
   top: 40%;
   left: 50%;
   text-align: center;
