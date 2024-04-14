@@ -82,11 +82,8 @@
   </section>
 </template>
 <script>
-import Project from '@/components/Project.vue'
 export default {
-  components: {
-    Project
-  }
+
 }
 </script>
 <style scoped>
@@ -127,7 +124,6 @@ export default {
 /* PROJECT-CONTENT */
 .projects__content {
   display: flex;
-
   justify-content: space-between;
 }
 
