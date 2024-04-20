@@ -3,7 +3,7 @@
     <img class="feature__img" src="@/assets/feature-img.png" alt="feature's img" width="430" height="329">
     <div class="feature__content">
       <div class="project-about">
-        <span class="project-count">3</span>
+        <span class="project-count">120+</span>
         <p class="project-text">Completed Projects</p>
       </div>
       <div class="proposal">

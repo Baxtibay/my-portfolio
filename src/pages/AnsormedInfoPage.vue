@@ -165,9 +165,6 @@ export default {
     order: 0;
     display: block;
   }
-  .project__link:hover {
-    color: #fff;
-  }
   .project__about-text-wrapper {
     width: 70%;
     order: 2;
