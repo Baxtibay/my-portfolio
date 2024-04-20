@@ -86,7 +86,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .projects {
   margin-bottom: 80px;
 }
@@ -129,7 +129,7 @@ export default {
 
 /* PROJECT-CARD */
 .project-card {
-  width: 100%;
+  width: 90%;
   padding-bottom: 10px;
   box-shadow: 0 .2px var(--black-80);
 }
@@ -183,9 +183,6 @@ export default {
 }
 
 .project__link:hover {
-  color: #fff;
-}
-.project__link.info-page:hover {
   color: var(--primary-color);
 }
 
