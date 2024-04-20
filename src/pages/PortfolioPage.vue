@@ -68,6 +68,40 @@
         </ul>
       </div>
       <!-- PROJECT END -->
+
+      <!-- PROJECT START -->
+      <div class="project-card">
+        <h3 class="project-card__heading">Countries</h3>
+        <div class="project-card__img-wrapper">
+          <img class="project-card__img" src="../assets/projects-img/Countries.png" alt="project's picture" width="300" height="300">
+        </div>
+        <div class="project__links">
+          <a class="project__link" href ="https://github.com/Baxtibay/country" target="_blank">
+            <span class="project__link-text">Github</span>
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a class="project__link" href="https://baxti-country.netlify.app/" target="_blank">
+            <span class="project__link-text">Deploy</span>
+            <i class="fa-solid fa-globe"></i>
+          </a>
+          <routerLink class="project__link" to="/countries-info-page">
+            <span class="project__link-text">More info</span>
+            <i class="fa-solid fa-circle-info"></i>
+          </routerLink>
+        </div>
+        <ul class="project__texnalogy-list">
+          <li class="project__texnalogy-item">
+            <span class="project__texnalogy-name">JavaScript</span>
+          </li>
+          <li class="project__texnalogy-item">
+            <span class="project__texnalogy-name">Html</span>
+          </li>
+          <li class="project__texnalogy-item">
+            <span class="project__texnalogy-name">Css</span>
+          </li>
+        </ul>
+      </div>
+      <!-- PROJECT END -->
     </div>
   </section>
 </template>
@@ -90,8 +124,10 @@ export default {}
 
 .projects__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 31%);
   gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* PROJECT */
@@ -143,10 +179,12 @@ export default {}
   color: var(--black-80);
   transition: color 0.3s ease;
   font-weight: 500;
+  border-bottom: 2px solid transparent;
 }
 
 .project__link:hover {
   color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .project__link:not(:last-child) {
