@@ -166,7 +166,7 @@ export default {}
 }
 
 .project__links {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
   justify-content: space-around;
@@ -236,8 +236,16 @@ export default {}
 }
 
 @media only screen and (max-width: 650px) {
+  .project-card {
+    text-align: center;
+  }
+
   .project__links {
-    flex-direction: column;
+    align-items: center;
+  }
+
+  .project__texnalogy-list {
+    justify-content: center;
   }
 
   .project__link:not(:last-child) {
