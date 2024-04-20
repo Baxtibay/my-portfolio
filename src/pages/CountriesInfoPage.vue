@@ -1,9 +1,9 @@
 <template>
   <div class="project">
-    <img class="project__img" src="../assets/projects-img/AnsorMed-preview-page.png" alt="">
+    <img class="project__img" src="../assets/projects-img/Countries-info-page-base.png" alt="">
     <div class="project__detail-wrapper">
       <div class="project__info">
-        <h1 class="project__heading">Ansormed</h1>
+        <h1 class="project__heading">Countries</h1>
         <div class="project__info-inner">
           <div class="project__item-link-wrapper">
             <ul class="project__texnology-list">
@@ -11,7 +11,7 @@
                 <span class="project__texnology-text">HTML</span>
               </li>
               <li class="project__texnology-item">
-                <span class="project__texnology-text">CSS</span>
+                <span class="project__texnology-text">SCSS</span>
               </li>
               <li class="project__texnology-item">
                 <span class="project__texnology-text">JS</span>
@@ -21,17 +21,17 @@
           </div>
           <div class="project__about-text-wrapper">
             <p class="project__about-text">
-              This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page.
+              This was a small project which mostly consisted of HTML and SCSS. I built a fully-responsive landing page.
             </p>
           </div>
         </div>
       </div>
       <div class="project__background">
         <h2 class="project__background-heading">Project Background</h2>
-        <p class="project__background-text">The only JavaScript this project required was to enable the toggling of the mobile navigation. It wasn't difficult because it was a small landing page project. I had not the responsive design because this time a litte caused difficulty.
+        <p class="project__background-text">This project required knowledge of html, scss, javascript and rest-api.And should have been done the mobile responsive and dark mode. It wasn't difficult because it was a small landing page project. I also learnt how to use javascript functions in a real project using the free api.
         </p>
-        <h3 class="project__background-heading">Static Previews</h3>
-        <img class="project__background-img" src="../assets/projects-img/AnsorMed-landing-page.png" width="690" height="1200" alt="">
+        <h3 class="project__background-heading">Static Mobile Previews</h3>
+        <img class="project__background-img" src="../assets/projects-img/Countries-info-page-mobil-view.png" width="690" height="1200" alt="countries mobile view">
       </div>
     </div>
     <EmailMe />
@@ -164,9 +164,6 @@ export default {
   .project__link {
     order: 0;
     display: block;
-  }
-  .project__link:hover {
-    color: #fff;
   }
   .project__about-text-wrapper {
     width: 70%;
