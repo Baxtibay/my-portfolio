@@ -44,6 +44,11 @@ const router = createRouter({
       name: 'in-progress',
       component: () => import('../pages/InProgressPage.vue')
     },
+    {
+      path: '/countries-info-page',
+      name: 'countries-info-page',
+      component: () => import('../pages/CountriesInfoPage.vue')
+    },
   ]
 })
 
